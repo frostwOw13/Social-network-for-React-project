@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f7f7;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-wrapper {
+  display: grid;
+  width: 1200px;
+  margin: 0 auto;
+
+
+grid-template-areas:
+"h h"
+"n c"
+"n p";
+
+  grid-template-rows: 80px 1fr;
+  grid-template-columns: 2fr 10fr;
+  /* grid-gap: 10px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  grid-area: h;
+  background-color: #3f72af;
+  margin: 0.5% 0 0.5% 0;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav {
+  grid-area: n;
+  border-radius: 5px;
+  margin-right: 10%;
 }
 
-.App-link {
-  color: #61dafb;
+.nav div {
+  background-color: #3f72af;
+  margin-bottom: 4%;
+  padding: 8%;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  grid-area: c;
+}
+
+.content h3 {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 25%;
+}
+
+.description {
+  padding-bottom: 0;
+  margin-left: 25%;
+  margin-top: 4%;
+}
+
+.description .lastFeature {
+  margin-bottom: 0;
+}
+
+.content img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.profilePicture {
+  float: left;
+}
+
+.profilePicture p {
+  margin-top: 1%;
+  padding: 5% 2% 5% 2%;
+  background-color: #dbe2ef;
+  border-radius: 5px;
+}
+
+.profilePicture img {
+  width: 200px;
+  height: 200px;
+}
+
+/* New Posts  */
+.posts {
+  grid-area: p;
+}
+
+.posts h4 {
+  margin-bottom: 0.5rem;;
+}
+
+.posts .textArea {
+  background-color: #dbe2ef;
+  border-radius: 10px;
+  padding: 0.5% 0 4% 3%;
+}
+
+.posts button {
+  float: right;
+  background-color: #3f72af;
+  border-style: none;
+  border-radius: 3px;
+  padding: 1% 3%;
+  margin: 2% 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bolder;
+}
+
+.posts .firstPost {
+    margin-top: 10%;
+}
+
+.posts .post {
+  margin-bottom: 3%;
+  text-align: justify;
+  background-color: #dbe2ef;
+  padding: 0.5% 4%;
+  border-radius: 25px;
 }

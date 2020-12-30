@@ -1,0 +1,14 @@
+.post {
+  margin-bottom: 3%;
+  text-align: justify;
+  background-color: #dbe2ef;
+  padding: 0.5% 4%;
+  border-radius: 25px;
+}
+
+.postBody img {
+  width: 30%;
+  border-radius: 30px;
+  float: left;
+  margin: 2% 2% 0 2%;
+}

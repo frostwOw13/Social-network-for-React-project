@@ -1,7 +1,16 @@
 import React from 'react';
 import s from './Dialogs.module.css';
+import {NavLink} from "react-router-dom";
+import Message from "./Message/Message";
+import Usernames from "./Usernames/Usernames";
 
-const Dialogs = () => {
+const Dialogs = (props) => {
+    let DialogItem = props.state.users
+        .map ( user => <Usernames name={user.firstName + ' ' + user.lastName} id={user.id} />)
+
+    let MessageItem = props.state.messages
+        .map ( message => < Message id={message.id} message={message.message} name={message.name}/> )
+
   return (
     <div className={s.dialogs}>
 
@@ -15,18 +24,7 @@ const Dialogs = () => {
         </div>
         <div className={s.messages}>
           <div className={s.textMessages}>
-            <div className={s.ownMessage}>
-              <p>Hey</p>
-              <img src='https://faceandcare.ru/wp-content/uploads/2017/11/uhod-za-kozhej-litsa-osenyu-osobennosti-02.jpg' />
-            </div>
-            <div className={s.elseMessage}>
-              <img src='https://avatars.mds.yandex.net/get-zen_doc/28532/pub_5c61df4e1fabdc00afe7d0d9_5c61ece61e2fc800ad83254f/scale_1200' />
-              <p>Whats'up</p>
-            </div>
-            <div className={s.ownMessage}>
-              <p>What are you doing today? Go to party tonight.</p>
-              <img src='https://faceandcare.ru/wp-content/uploads/2017/11/uhod-za-kozhej-litsa-osenyu-osobennosti-02.jpg' />
-            </div>
+              { MessageItem }
           </div>
           <div className={s.formNewMessage}>
             <p>Type new message...</p>
@@ -42,16 +40,13 @@ const Dialogs = () => {
         <hr />
 
         <div className={s.users}>
-            <p>Kevin</p>
-            <p>John</p>
-            <p>Ryan</p>
-            <p>Rihanna</p>
+            { DialogItem }
         </div>
 
       </div>
 
     </div>
   )
-}
+};
 
 export default Dialogs;

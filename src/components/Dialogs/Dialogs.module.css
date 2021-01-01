@@ -36,47 +36,32 @@
 }
 
 
-.ownMessage {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.ownMessage p {
-  background-color: #dbe2ef;
-  margin-right: 5%;
-  padding: 4%;
-  border-radius: 20px;
-}
-
-.ownMessage img {
-  width: 70px;
-  height: 70px;
-  border-radius:35px;
-  border-style: solid;
-  border-width: thin;
-}
-
-
-.elseMessage {
+.Message {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.elseMessage p {
+.Message p {
   background-color: #dbe2ef;
-  margin-left: 5%;
-  padding: 4%;
+  padding: 10%;
   border-radius: 20px;
 }
 
-.elseMessage img {
-  width: 70px;
-  height: 70px;
-  border-radius:35px;
+.textArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.Message img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-right: 10px;
   border-style: solid;
   border-width: thin;
+  margin-bottom: 10px;
 }
 
 .formNewMessage {
@@ -112,10 +97,20 @@ hr {
   width: 80%;
 }
 
+
 .users p {
-  text-align: right;
+  text-align: center;
   margin: 1% 10% 1% 10%;
   padding: 4% 5%;
   background-color: #dbe2ef;
   border-radius: 30px;
+}
+
+.users a {
+  text-decoration: none;
+  color: #000;
+}
+.users a:hover {
+  opacity: .3;
+  transition: .2s;
 }

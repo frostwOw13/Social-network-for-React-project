@@ -5,7 +5,6 @@ body {
 
 .app-wrapper {
   display: grid;
-  margin: 0 auto;
 
 
   grid-template-areas:
@@ -19,6 +18,7 @@ body {
 }
 
 .app-wrapper-content {
-    grid-area: c;
-    background-color: #d1dbe8;
+  grid-area: c;
+  background-color: #d1dbe8;
+  z-index: -1;
 }

@@ -1,7 +1,7 @@
 .nav {
   grid-area: n;
-  border-radius: 5px;
-  margin-right: 10%;
+  padding: 20px 20px 0 20px;
+  box-shadow: 1px 3px 5px grey;
 }
 
 .nav div {
@@ -10,11 +10,34 @@
   border-radius: 5px;
 }
 
-.item a {
+.item i {
+  margin-right: 15px;
+  color: black;
+}
+
+.item {
+  padding: 20px 0 15px 20px
+}
+
+.item.active {
+  background-color: #e6ecf5;
+  border-radius: 5px;
+}
+
+.item span {
+  font-size: 0.9rem;
+}
+
+a {
+  font-family: Montserrat, sans-serif;
   text-decoration: none;
   color: #000;
 }
-.item a:hover {
-  opacity: .3;
-  transition: .2s;
+
+a:hover {
+  color: #3f72af;
+  transition: .5s;
 }
+
+
+

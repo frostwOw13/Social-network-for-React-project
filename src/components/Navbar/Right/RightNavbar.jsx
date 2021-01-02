@@ -4,24 +4,39 @@ import {NavLink} from 'react-router-dom'
 
 const RightNavbar = () => {
   return <nav className={s.nav}>
-    <div className={s.item}>
-      <NavLink to='/news'>News</NavLink>
-    </div>
-    <div className={s.item}>
-      <NavLink to='/profile'>Profile</NavLink>
-    </div>
-    <div className={s.item}>
-      <NavLink to='/friends'>Friends</NavLink>
-    </div>
-    <div className={s.item}>
-      <NavLink to='/dialogs'>Messages</NavLink>
-    </div>
-    <div className={s.item}>
-      <NavLink to='/music'>Music</NavLink>
-    </div>
-    <div className={s.item}>
-      <NavLink to='/settings'>Settings</NavLink>
-    </div>
+      <NavLink to='/dialogs' className={s.aChat}>Chats</NavLink>
+        <ul>
+
+        <li className={s.item}>
+          <img src='https://cutt.ly/1jokDaz' />
+          <div>
+            <a href='#'><span>Mike Schroepfer</span></a>
+            <p>Just now</p>
+          </div>
+        </li>
+          <li className={s.item}>
+            <img src='https://cutt.ly/1jokDaz' />
+            <div>
+              <a href='#'><span>Mike Schroepfer</span></a>
+              <p>Just now</p>
+            </div>
+          </li>
+          <li className={s.item}>
+            <img src='https://cutt.ly/1jokDaz' />
+            <div>
+              <a href='#'><span>Mike Schroepfer</span></a>
+              <p>Just now</p>
+            </div>
+          </li>
+          <li className={s.item}>
+            <img src='https://cutt.ly/1jokDaz' />
+            <div>
+              <a href='#'><span>Mike Schroepfer</span></a>
+              <p>Just now</p>
+            </div>
+          </li>
+
+      </ul>
   </nav>
 }
 

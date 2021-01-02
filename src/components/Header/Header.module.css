@@ -1,6 +1,32 @@
 .header {
   grid-area: h;
-  background-color: #3f72af;
-  margin: 0.5% 0 0.5% 0;
-  border-radius: 5px;
+  box-shadow: 1px 1px 10px grey;
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  height: 80px;
+}
+
+.header input {
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 14px;
+  background-color: #e6ecf5;
+  padding: 0 120px 10px 10px;
+  border-radius: 10px;
+}
+
+.searchForm {
+  background-color: #e6ecf5;
+  padding: 5px 20px 5px 0;
+  border-radius: 10px;
+}
+
+input:focus{outline:none;}
+
+i {
+  color: #3f72af;
 }

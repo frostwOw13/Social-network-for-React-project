@@ -6,6 +6,7 @@ import Profile from "./components/Profile/Profile.jsx"
 import Dialogs from './components/Dialogs/Dialogs.jsx'
 import News from './components/News/News.jsx'
 import {BrowserRouter, Route} from 'react-router-dom'
+import RightNavbar from "./components/Navbar/Right/RightNavbar";
 
 function App(props) {
   return (
@@ -13,6 +14,7 @@ function App(props) {
       <div className="app-wrapper">
         <Header />
         <Navbar />
+        <RightNavbar />
 
         <div className='app-wrapper-content'>
         <Route path='/news' render={ () => <News/> }/>

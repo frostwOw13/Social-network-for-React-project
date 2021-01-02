@@ -13,6 +13,28 @@ const Header = () => {
                         <a><i className="fas fa-search"></i></a>
                 </form>
             </div>
+            <div className={s.rightSideNotifications}>
+                <ul className={s.notifications}>
+                    <li className={s.img}>
+                        <a href='#'><img src='https://cutt.ly/wjiRGAM' /></a>
+                    </li>
+                    <li className={s.navItem}>
+                        <a href='#'>Robert Downey Jr.</a>
+                    </li>
+                    <li className={s.navItemFont}>
+                        <a href='#'><i className="fas fa-home"></i></a>
+                    </li>
+                    <li className={s.navItemFont}>
+                        <a href='#'><i className="fas fa-user-friends"></i></a>
+                    </li>
+                    <li className={s.navItemFont}>
+                        <a href='#'><i className="fas fa-bell"></i></a>
+                    </li>
+                    <li className={s.navItemFont}>
+                        <a href='#'><i className="fas fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
 
         </div>
 )

@@ -20,5 +20,5 @@ body {
 .app-wrapper-content {
   grid-area: c;
   background-color: #d1dbe8;
-  z-index: -1;
+  z-index: -2;
 }

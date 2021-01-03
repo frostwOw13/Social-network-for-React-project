@@ -2,46 +2,64 @@ import React, {Component} from 'react';
 import s from './Profile.module.css';
 import Post from './Post/Post.jsx'
 
-class Profile extends Component {
-  render() {
-    return <div className={s.content}>
-
-      <div className={s.profilePicture}>
-        <img
-            src='https://4.bp.blogspot.com/-TLaoMfZtF7Q/Vp3iWrZf7wI/AAAAAAAA8WA/-RPPQ58sTx8/s1600/Kaplan-hd-wallpapers%2B%2528165%2529.jpg'/>
-        <p>Download new picture</p>
-      </div>
-
-      <div>
-        <h3>Ruslan Yusupov</h3>
-      </div>
-      <div className={s.description}>
-        <p>Date of Brith: 28 June</p>
-        <p>City: Tula</p>
-        <p>Education: TulGU</p>
-        <p className={s.lastFeature}>Web site: https://it-social-network.com</p>
-      </div>
-
-      <div className={s.posts}>
-
-        <div>
-          <h4>New Post</h4>
+const Profile = (props) => {
+  return (
+    <div className={s.content}>
+      <div className={s.top_container}>
+        <div className={s.backgroundImg}>
+          <div className={s.top_left}>
+          </div>
+          <div className={s.top_right}>
+          </div>
         </div>
+        <div className={s.profileItem}>
+          <img src='https://cutt.ly/BjoCYmV' className={s.profilePic}/>
+          <div className={s.profileFooter}>
+            <ul className={s.socIcons}>
+              <li>
+                <a href='#'><img src="https://cutt.ly/wjoBCZR"></img></a>
+              </li>
+              <li>
+                <a href='#'><img src="https://cutt.ly/3joNti3"></img></a>
+              </li>
+              <li>
+                <a href='#'><img src="https://cutt.ly/cjoNsnf"></img></a>
+              </li>
+              <li>
+                <a href='#'><img src="https://cutt.ly/KjoNkQY"></img></a>
+              </li>
+              <li>
+                <a href='#'><img src="https://cutt.ly/LjoNzHB "></img></a>
+              </li>
+              <li>
+                <a href='#'><img src="https://cutt.ly/njoNczw"></img></a>
+              </li>
 
-        <div className={s.textArea}>
-          <p>Type something new here...</p>
+            </ul>
+            <p className={s.profileName}>Robert Downey Jr.</p>
+            <div className={s.profileCounts}>
+              <ul className={s.postsCount}>
+                <li>
+                  <p className={s.countsNames}>Posts</p>
+                  <p>120</p>
+                </li>
+                <li>
+                  <p className={s.countsNames}>Followers</p>
+                  <p>653</p>
+                </li>
+                <li>
+                  <p className={s.countsNames}>Following</p>
+                  <p>431</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-
-        <div className='button'>
-          <button type="button" name="button">Submit</button>
-        </div>
-        <Post days='Day 1'/>
-        <Post days='Day 2'/>
-
       </div>
+
 
     </div>
-  }
+  )
 }
 
 export default Profile;

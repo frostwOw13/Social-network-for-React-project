@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.top_container {
+  margin-bottom: -90px;
+}
+
 .backgroundImg {
   display: flex;
   justify-content: center;
@@ -91,4 +95,98 @@
 
 .countsNames {
   font-weight: bold;
+}
+
+/*---------------------------------------Middle container---------------------------------------------*/
+
+.middle_container {
+  margin: 0 3% 0 3%;
+  box-shadow: 0px 0px 5px lightgrey;
+}
+
+.middle_container ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f9f7f7;
+  padding: 0;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.middle_container .about {
+  background-color: #e6ecf5;
+  margin: 0;
+  padding: 3% 10% 3% 10%;
+  border-radius: 10px;
+}
+
+.middle_container .timeline {
+  margin: 0;
+  padding: 3% 10% 3% 10%;
+}
+
+.middle_container .friends {
+  margin: 0;
+  padding: 3% 10% 3% 10%;
+}
+
+.middle_container .photos {
+  margin: 0;
+  padding: 3% 10% 3% 10%;
+}
+
+/*---------------------------------------Bottom container-------------------------------------------*/
+
+.bottom_container {
+  margin: 0 3% 0 3%;
+  box-shadow: 0px 0px 5px lightgrey;
+  background-color: #f9f7f7;
+  border-radius: 10px;
+}
+
+.bottom_container {
+  display: flex;
+}
+
+.navbar_bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+  text-align: left;
+  color: #3f72af;
+  font-size: 0.95rem;
+}
+
+.navbar_bottom a {
+  margin-bottom: 20px;
+}
+
+.content_bottom {
+  padding-top: 30px;
+  text-align: left;
+  width: 50%;
+}
+
+.content_bottom h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.content_bottom hr {
+  width: 95%;
+  color: #bfbfbf  ;
+}
+
+.content_content {
+  display: flex;
+  font-size: 0.9rem;
+}
+
+.left_content {
+  font-weight: bold;
+  width: 45%;
+}
+
+.right_content {
+  right: 50px;
 }

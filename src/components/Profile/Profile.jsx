@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import s from './Profile.module.css';
 import Post from './Post/Post.jsx'
+import {NavLink} from "react-router-dom";
 
 const Profile = (props) => {
   return (
@@ -56,8 +57,77 @@ const Profile = (props) => {
           </div>
         </div>
       </div>
-
-
+      <div className={s.middle_container}>
+        <ul>
+          <li className={s.timeline}>
+            <NavLink to='#'>Timeline</NavLink>
+          </li>
+          <li className={s.about}>
+            <NavLink to='#'>About</NavLink>
+          </li>
+          <li className={s.friends}>
+            <NavLink to='#'>Friends</NavLink>
+          </li>
+          <li className={s.photos}>
+            <NavLink to='#'>Photos</NavLink>
+          </li>
+        </ul>
+      </div>
+      <div className={s.bottom_container}>
+        <div className={s.navbar_bottom}>
+          <a href='#'>Contact and Basic Info</a>
+          <a href='#'>Family and Relationship</a>
+          <a href='#'>Work and Education</a>
+          <a href='#'>Places You've Lived</a>
+          <a href='#'>Details About You</a>
+        </div>
+        <div className={s.content_bottom}>
+          <h4>Contact information</h4>
+          <hr />
+          <div className={s.content_content}>
+            <div className={s.left_content}>
+              <p>Email</p>
+              <p>Mobile</p>
+              <p>Adress</p>
+            </div>
+            <div className={s.right_content}>
+              <p>frostwOw13@yandex.ru</p>
+              <p>8 (953) 999 99 99</p>
+              <p>Russian Federation</p>
+            </div>
+          </div>
+          <h4>Websites and Social Links</h4>
+          <hr />
+          <div className={s.content_content}>
+            <div className={s.left_content}>
+              <p>Website</p>
+              <p>Social Link</p>
+            </div>
+            <div className={s.right_content}>
+              <p>https://frostysoc.com</p>
+              <p>https://frostysoc.com</p>
+            </div>
+          </div>
+          <h4>Basic Information</h4>
+          <hr />
+          <div className={s.content_content}>
+            <div className={s.left_content}>
+              <p>Birth Date</p>
+              <p>Birth Year</p>
+              <p>Gender</p>
+              <p>interested in</p>
+              <p>language</p>
+            </div>
+            <div className={s.right_content}>
+              <p>28 June</p>
+              <p>1997</p>
+              <p>Male</p>
+              <p>Programming</p>
+              <p>English, Russian</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

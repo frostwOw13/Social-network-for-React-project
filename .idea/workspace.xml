@@ -4,8 +4,7 @@
     <list default="true" id="fc733cc3-197f-484b-b2f9-b0735954a278" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar/Right/RightNavbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Right/RightNavbar.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
@@ -73,7 +72,8 @@
       <workItem from="1609580151412" duration="2614000" />
       <workItem from="1609583415750" duration="8059000" />
       <workItem from="1609614900008" duration="8954000" />
-      <workItem from="1609664762644" duration="4886000" />
+      <workItem from="1609664762644" duration="5044000" />
+      <workItem from="1609680421505" duration="3408000" />
     </task>
     <servers />
   </component>
